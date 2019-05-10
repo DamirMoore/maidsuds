@@ -1,0 +1,140 @@
+@import "_normalize.scss";
+@import "_base.scss";
+@import "_vars.scss";
+
+
+
+
+
+// reset default browser css
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  // reset default browser css
+  body, html {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: $smokey-black;
+  }
+
+  button {
+    cursor: pointer;
+    color: $smokey-black;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  input {
+    color: $smokey-black;
+    padding-left: 0.3em;
+    height: 2.5em;
+  }
+
+  ::placeholder {
+    color: $gray-500;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $gray-500;
+  }
+
+  ::-ms-input-placeholder {
+    color: $gray-500;
+  }
+
+  p {
+    line-height: 1.7rem;
+    font-size: 110%;
+  }
+
+  input {
+    color: $smokey-black;
+    padding-left: 0.5em;
+    padding-top: 0.3em;
+    border: 1px solid $gray-400;
+  }
+
+  textarea {
+    color: $smokey-black;
+    padding-left: 0.5em;
+    padding-top: 0.3em;
+    border: 1px solid $gray-400;
+    //    max-width: 90%;
+    resize: vertical;
+  }
+
+  select {
+    color: $smokey-black;
+  }
+
+
+
+
+
+
+
+.header-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    margin-top: 1rem;
+
+
+    .navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        margin-top: 1rem;
+
+        a {
+            margin-left: 3rem;
+
+            &:first-of-type {
+                // color: coral;
+                margin-left: 0;
+            }
+        }
+    }
+}
