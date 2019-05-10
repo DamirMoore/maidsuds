@@ -14,9 +14,18 @@ a {
 
   // reset default browser css
   body, html {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    // flex-direction column
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    // align-content space between
+    -ms-flex-line-pack: justify;
     align-content: space-between;
+
     min-height: 100vh;
     width: 100%;
     height: 100%;
@@ -160,4 +169,9 @@ a {
     color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.main-home-section {
+    background-color: $lollipop-blue;
+    height: 100%;
 }
