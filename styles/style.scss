@@ -135,16 +135,21 @@ a {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
-        margin-top: 1rem;
+        margin-top: 1.5rem;
 
         a {
             margin-left: 3rem;
+            font-weight: 600;
 
             &:first-of-type {
                 // color: coral;
                 margin-left: 0;
             }
         }
+    }
+
+    img {
+        width: 300px;
     }
 }
 
@@ -209,7 +214,12 @@ a {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
-        background-color: pink;
+        // background option 1
+        background-color: #FFA8B7;
+
+        // background option 2
+        // background-color: #DFB6E3;
+
         color: #fff;
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -269,7 +279,7 @@ a {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
-        background-color: pink;
+        background-color: #FFA8B7;
         color: #fff;
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -297,7 +307,7 @@ a {
 
         margin-top: 2rem;
         // background-color: $gray-100;
-        background-color: pink;
+        background-color: #FFA8B7;
         color: #fff;
         width: 90%;
         border-radius: 3px;
