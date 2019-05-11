@@ -169,6 +169,7 @@ a {
     // color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-top: 9rem;
 }
 
 .main-home-section {
@@ -192,14 +193,58 @@ a {
     height: 100%;
 
     .jumbotron-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
         background-color: pink;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        color: #fff;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         margin-bottom: 3rem;
+        margin-top: 2rem;
         width: 100%;
+
+        button {
+            color: #fff;
+            background-color: $lollipop-blue;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            margin-top: 2rem;
+        }
     }
 
     .home-services-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
         // background-color: pink;
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -208,9 +253,26 @@ a {
     }
 
     .locations-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
         background-color: pink;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        color: #fff;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         margin-bottom: 3rem;
         width: 100%;
     }
@@ -231,9 +293,12 @@ a {
         align-items: center;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        text-align: center;
 
         margin-top: 2rem;
-        background-color: $gray-100;
+        // background-color: $gray-100;
+        background-color: pink;
+        color: #fff;
         width: 90%;
         border-radius: 3px;
         padding-top: 3rem;
@@ -248,6 +313,10 @@ a {
             padding-right: 6rem;
             margin-top: 2rem;
             //
+        }
+
+        .home-call-to-action-title {
+            margin-bottom: 2rem;
         }
     }
 }

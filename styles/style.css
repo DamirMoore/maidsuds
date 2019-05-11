@@ -480,7 +480,8 @@ select {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin-top: 9rem; }
 
 .main-home-section {
   display: -webkit-box;
@@ -500,20 +501,76 @@ select {
   flex-wrap: wrap;
   height: 100%; }
   .main-home-section .jumbotron-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     background-color: pink;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin-bottom: 3rem;
+    margin-top: 2rem;
     width: 100%; }
+    .main-home-section .jumbotron-section button {
+      color: #fff;
+      background-color: #32bdb6;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      margin-top: 2rem; }
   .main-home-section .home-services-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 3rem;
     width: 100%; }
   .main-home-section .locations-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     background-color: pink;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin-bottom: 3rem;
     width: 100%; }
   .main-home-section .home-call-to-action {
@@ -532,8 +589,10 @@ select {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    text-align: center;
     margin-top: 2rem;
-    background-color: rgba(100, 100, 100, 0.1);
+    background-color: pink;
+    color: #fff;
     width: 90%;
     border-radius: 3px;
     padding-top: 3rem;
@@ -546,5 +605,7 @@ select {
       padding-left: 6rem;
       padding-right: 6rem;
       margin-top: 2rem; }
+    .main-home-section .home-call-to-action .home-call-to-action-title {
+      margin-bottom: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
