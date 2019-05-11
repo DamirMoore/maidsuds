@@ -22,9 +22,6 @@ body {
 /**
 * Render the `main` element consistently in IE.
 */
-main {
-  display: block; }
-
 /**
 * Correct the font size and margin on `h1` elements within `section` and
 * `article` contexts in Chrome, Firefox, and Safari.
@@ -377,7 +374,6 @@ body, html {
   align-content: space-between;
   min-height: 100vh;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -483,13 +479,72 @@ select {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #3D3D3D;
-  color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
 .main-home-section {
-  background-color: #32bdb6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   height: 100%; }
+  .main-home-section .jumbotron-section {
+    background-color: pink;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    width: 100%; }
+  .main-home-section .home-services-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    width: 100%; }
+  .main-home-section .locations-section {
+    background-color: pink;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    width: 100%; }
+  .main-home-section .home-call-to-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    background-color: rgba(100, 100, 100, 0.1);
+    width: 90%;
+    border-radius: 3px;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    .main-home-section .home-call-to-action button {
+      background-color: #32bdb6;
+      color: #fff;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+      margin-top: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
