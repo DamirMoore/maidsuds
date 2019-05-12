@@ -143,6 +143,8 @@ a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
+
+
     margin-top: 1rem;
 
     .call-now-section {
@@ -220,6 +222,10 @@ a {
             &:first-of-type {
                 // color: coral;
                 margin-left: 0;
+            }
+
+            &:hover {
+
             }
         }
     }
@@ -307,6 +313,7 @@ a {
         align-items: center;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        text-align: center;
 
         // background option 1
         background-color: #FFA8B7;
@@ -604,5 +611,31 @@ a {
     .call-now-section-small-screens {
         visibility: visible;
         left: 1rem;
+    }
+
+    .home-nav-link {
+        display: none;
+    }
+
+    .header-section {
+      .navbar {
+        a.services-nav-link {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .main-home-section {
+      .jumbotron-section {
+        button {
+            width: 15rem;
+        }
+      }
+
+      .home-call-to-action {
+        button {
+          width: 15rem;
+        }
+      }
     }
 }

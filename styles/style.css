@@ -603,6 +603,7 @@ h1 {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    text-align: center;
     background-color: #FFA8B7;
     color: #fff;
     padding-top: 7rem;
@@ -819,6 +820,17 @@ h1 {
 @media all and (max-width: 480px) and (min-width: 300px) {
   .call-now-section-small-screens {
     visibility: visible;
-    left: 1rem; } }
+    left: 1rem; }
+
+  .home-nav-link {
+    display: none; }
+
+  .header-section .navbar a.services-nav-link {
+    margin-left: 0; }
+
+  .main-home-section .jumbotron-section button {
+    width: 15rem; }
+  .main-home-section .home-call-to-action button {
+    width: 15rem; } }
 
 /*# sourceMappingURL=style.css.map */
