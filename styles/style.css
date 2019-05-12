@@ -707,7 +707,8 @@ h1 {
     margin-bottom: 3rem;
     width: 100%; }
     .main-home-section .about-us-sample-section p {
-      width: 80%; }
+      width: 80%;
+      margin-top: 2rem; }
   .main-home-section .locations-section {
     display: -webkit-box;
     display: -ms-flexbox;
