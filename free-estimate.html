@@ -42,20 +42,26 @@
         </nav>
     </header>
 
-    <main class="main-contact-section">
+    <main class="main-free-estimate-section">
+        <form class="free-estimate-form" action="https://formspree.io/maidsuds@gmail.com" method="POST">
+            <h1>Request A Cleaning Estimate</h1>
+            <div class="free-estimate-form-group">
+                <h2>Your Information</h2>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Street Address">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Zip">
+                <input type="text" placeholder="Email Address">
+                <input type="text" placeholder="Phone">
+            </div>
+            <div class="free-estimate-form-group">
+                <h2>Tell Us About Your Home</h2>
+                <input type="text" placeholder="House Style (one-story, two-story, etc.)">
+                <input type="text" placeholder="Square Feet">
+            </div>
 
-        <form method="POST" action="https://formspree.io/maidsuds@gmail.com" class="contact-us-form">
-            <h2>Contact Us</h2>
-            <p>MaidSuds is always ready to help. Send us a message and we'll respond as soon as we can.</p>
-            <input type="text" class="contact-name" name="name" placeholder="Name" />
-            <input class="contact-email" type="email" name="email" placeholder="Email" />
-            <textarea name="message" placeholder="Your Message..." rows="10" class="contact-message"></textarea>
-            <!-- <p class="contact-form-error contact-hide-error">
-                Error! All fields must be completed.
-            </p> -->
-            <!-- <div onclick="submitContactForm()" class="contact-us-button">Send Message</div> -->
-            <!-- <button onclick="submitContactForm()" class="contact-us-button">Send Messsage</button> -->
-            <input class="contact-us-real-button" type="submit" value="Send Message">
+            <input class="free-estimate-real-button pulse" type="submit" value="Get Free Estimate">
         </form>
     </main>
 
