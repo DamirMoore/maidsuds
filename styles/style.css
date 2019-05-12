@@ -424,6 +424,9 @@ textarea {
 select {
   color: #3D3D3D; }
 
+h1 {
+  font-size: 250%; }
+
 .pulse-phone {
   -webkit-animation: pulse-phone 2s linear infinite;
   animation: pulse-phone 2s linear infinite; }
@@ -650,7 +653,8 @@ select {
       -ms-flex-align: center;
       align-items: center;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      width: 100%; }
       .main-home-section .home-services-section .services-item-section .services-item {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -668,9 +672,17 @@ select {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         text-align: center;
-        background-color: #32bdb6;
-        width: 15rem;
-        height: 10rem; }
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        margin-bottom: 1rem;
+        width: 20rem;
+        height: 16rem; }
+        .main-home-section .home-services-section .services-item-section .services-item img {
+          width: 8rem;
+          height: 8rem;
+          margin-bottom: 1rem; }
   .main-home-section .about-us-sample-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -715,6 +727,51 @@ select {
     padding-bottom: 3rem;
     margin-bottom: 3rem;
     width: 100%; }
+    .main-home-section .locations-section .locations-item-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%; }
+      .main-home-section .locations-section .locations-item-section .locations-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        text-align: center;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        margin-bottom: 1rem;
+        width: 20rem;
+        height: 16rem; }
+        .main-home-section .locations-section .locations-item-section .locations-item img {
+          width: 8rem;
+          height: 8rem;
+          margin-bottom: 1rem; }
   .main-home-section .home-call-to-action {
     display: -webkit-box;
     display: -ms-flexbox;

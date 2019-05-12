@@ -92,6 +92,10 @@ a {
     color: $smokey-black;
   }
 
+  h1 {
+      font-size: 250%;
+  }
+
 
 
   .pulse-phone {
@@ -387,6 +391,9 @@ a {
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
 
+            // background-color: coral;
+            width: 100%;
+
             .services-item {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -404,10 +411,21 @@ a {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 text-align: center;
+                -ms-flex-item-align: start;
+                align-self: flex-start;
 
-                background-color: $lollipop-blue;
-                width: 15rem;
-                height: 10rem;
+                // background-color: $lollipop-blue;
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
+                margin-bottom: 1rem;
+                width: 20rem;
+                height: 16rem;
+
+                img {
+                    width: 8rem;
+                    height: 8rem;
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
@@ -464,6 +482,61 @@ a {
         padding-bottom: 3rem;
         margin-bottom: 3rem;
         width: 100%;
+
+        .locations-item-section {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+            // background-color: coral;
+            width: 100%;
+
+            .locations-item {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                text-align: center;
+                -ms-flex-item-align: start;
+                align-self: flex-start;
+
+                // background-color: $lollipop-blue;
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
+                margin-bottom: 1rem;
+                width: 20rem;
+                height: 16rem;
+
+                img {
+                    width: 8rem;
+                    height: 8rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
     }
 
     .home-call-to-action {
