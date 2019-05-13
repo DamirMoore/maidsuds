@@ -1003,6 +1003,35 @@ h1 {
     .contact-us-form .contact-us-real-button:hover {
       background-color: #30B5AF; }
 
+.main-services-section {
+  text-align: center; }
+  .main-services-section .services-page-item-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .main-services-section .services-page-item-group img {
+      width: 12rem; }
+    .main-services-section .services-page-item-group .services-page-item {
+      width: 45rem; }
+      .main-services-section .services-page-item-group .services-page-item h2 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem; }
+      .main-services-section .services-page-item-group .services-page-item p {
+        padding-left: 1rem;
+        padding-right: 1rem; }
+
 @media all and (min-width: 800px) {
   .call-now-section-small-screens {
     visibility: hidden; } }

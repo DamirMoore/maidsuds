@@ -720,6 +720,9 @@ a {
 
 
 
+
+
+// Free Estimate Page
 .main-free-estimate-section {
   margin-top: 4rem;
 
@@ -792,6 +795,8 @@ a {
 
 
 
+
+// Contact Page
 .contact-us-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,6 +839,70 @@ a {
 
     &:hover {
       background-color: $lollipop-blue-hover;
+    }
+  }
+}
+
+
+
+
+// Services Page
+.main-services-section {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: flex;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // justify-content: center;
+  // -webkit-box-orient: vertical;
+  // -webkit-box-direction: normal;
+  // -ms-flex-direction: column;
+  // flex-direction: column;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
+  // -ms-flex-wrap: wrap;
+  // flex-wrap: wrap;
+  text-align: center;
+
+  .services-page-item-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    // background-color: $lollipop-blue;
+
+    img {
+      width: 12rem;
+    }
+
+    .services-page-item {
+      // background-color: $maid-pink;
+      // max-width: 45rem;
+      // margin-left: 2rem;
+      width: 45rem;
+
+      h2 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
   }
 }
