@@ -11,6 +11,7 @@
   <title>MaidSuds - Professional House Cleaning</title>
 
   <!-- css imports -->
+  <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -21,6 +22,7 @@
   <!-- js imports -->
   <!-- respond.js makes min and max media queries work on old IE browsers -->
   <script src="js/respond.js/respond.js"></script>
+  <script src='js/uikit.min.js'></script>
 </head>
 
 <body>
@@ -29,11 +31,11 @@
       <p>816-548-1105</p>
       <p>Call Now For A FREE Estimate!</p>
     </div>
-    <div class="call-now-section-small-screens pulse-phone">
+    <div class="call-now-section-small-screens pulse-phone" uk-toggle="target: #call-us-modal">
       <i class="fas fa-phone-volume"></i>
     </div>
     <!-- <h1><a href="index.html">MaidSuds</a></h1> -->
-    <img src="images/logo2.png" alt="MaidSuds">
+    <a href="index.html"><img src="images/logo2.png" alt="MaidSuds"></a>
     <nav class="navbar">
       <a class="home-nav-link" href="index.html">Home</a>
       <a class="services-nav-link" href="services.html">Services</a>
@@ -44,9 +46,12 @@
 
   <main class="main-home-section">
     <section class="jumbotron-section">
-      <h1>Cleaning With Care</h1>
-      <p>We Care About Your Home</p>
-      <a href="free-estimate.html"><button class="jumbotron-button pulse">Request an Estimate</button></a>
+      <img src="images/maidsuds lady.png" alt="MaidSuds Professional House Cleaning">
+      <div>
+        <h1>Cleaning With Care</h1>
+        <p>We Care About Your Home</p>
+        <a href="free-estimate.html"><button class="jumbotron-button pulse">Request an Estimate</button></a>
+      </div>
     </section>
 
 
@@ -110,17 +115,17 @@
       <div class="locations-item-section">
         <div class="locations-item">
           <img src="images/locations bubble.png" alt="MaidSuds Cleaning Services">
-          <h2>Buckner</h2>
+          <h2 class="location-buckner">Buckner</h2>
         </div>
 
         <div class="locations-item">
           <img src="images/locations bubble.png" alt="MaidSuds Cleaning Services">
-          <h2>Grain <br />Valley</h2>
+          <h2 class="location-grain-valley">Grain <br />Valley</h2>
         </div>
 
         <div class="locations-item">
           <img src="images/locations bubble.png" alt="MaidSuds Cleaning Services">
-          <h2>Oak <br />Grove</h2>
+          <h2 class="location-oak-grove">Oak <br />Grove</h2>
         </div>
       </div>
       <div class="locations-item-section">
@@ -131,12 +136,12 @@
 
         <div class="locations-item">
           <img src="images/locations bubble.png" alt="MaidSuds Cleaning Services">
-          <h2>Lake <br />Lotawana</h2>
+          <h2 class="location-lake-lotawana">Lake <br />Lotawana</h2>
         </div>
 
         <div class="locations-item">
           <img src="images/locations bubble.png" alt="MaidSuds Cleaning Services">
-          <h2>Lake <br />Tapawingo</h2>
+          <h2 class="location-lake-tapawingo">Lake <br />Tapawingo</h2>
         </div>
       </div>
     </section>
@@ -191,6 +196,17 @@
       <a href="free-estimate.html"><button class="pulse">Request an Estimate</button></a>
     </section>
   </main>
+
+  <div id="call-us-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <img src="images/phone icon.png" alt="MaidSuds Cleaning Services">
+      <h2>816-548-1105</h2>
+      <p>MaidSuds is always ready to help. Give us a call and get a free estimate.</p>
+      <p>or</p>
+      <a href="free-estimate.html"><button class="pulse">Fill Out Form For Free Estimate</button></a>
+      <span class="uk-modal-close phone-modal-close fas fa-times"></span>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="social-media-icon-section">

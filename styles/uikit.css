@@ -34,40 +34,40 @@
 html {
   /* 1 */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
+  /* font-size: 16px;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.5; */
   /* 2 */
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-text-size-adjust: 100%; */
   /* 3 */
-  background: #fff;
-  color: #666;
+  /* background: #fff;
+  color: #666; */
 }
 /*
  * Remove the margin in all browsers.
  */
-body {
+/* body {
   margin: 0;
-}
+} */
 /* Links
  ========================================================================== */
 /*
  * Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-a {
+/* a {
   -webkit-text-decoration-skip: objects;
-}
+} */
 /*
  * Remove the outline on focused links when they are also active or hovered
  */
-a:active,
+/* a:active,
 a:hover {
   outline: none;
-}
+} */
 /*
  * Style
  */
-a,
+/* a,
 .uk-link {
   color: #1e87f0;
   text-decoration: none;
@@ -78,7 +78,7 @@ a:hover,
 .uk-link:hover {
   color: #0f6ecd;
   text-decoration: underline;
-}
+} */
 /* Text-level semantics
  ========================================================================== */
 /*
@@ -120,9 +120,9 @@ strong {
 /*
  * Emphasize
  */
-em {
+/* em {
   color: #f0506e;
-}
+} */
 /*
  * Insert
  */
@@ -251,7 +251,7 @@ figure {
 }
 /* Headings
  ========================================================================== */
-h1,
+/* h1,
 .uk-h1,
 h2,
 .uk-h2,
@@ -268,9 +268,9 @@ h6,
   font-weight: normal;
   color: #333;
   text-transform: none;
-}
+} */
 /* Add margin if adjacent element */
-* + h1,
+/* * + h1,
 * + .uk-h1,
 * + h2,
 * + .uk-h2,
@@ -283,11 +283,11 @@ h6,
 * + h6,
 * + .uk-h6 {
   margin-top: 40px;
-}
+} */
 /*
  * Sizes
  */
-h1,
+/* h1,
 .uk-h1 {
   font-size: 2.23125rem;
   line-height: 1.2;
@@ -316,9 +316,9 @@ h6,
 .uk-h6 {
   font-size: 0.875rem;
   line-height: 1.4;
-}
+} */
 /* Tablet landscape and bigger */
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   h1,
   .uk-h1 {
     font-size: 2.625rem;
@@ -327,7 +327,7 @@ h6,
   .uk-h2 {
     font-size: 2rem;
   }
-}
+} */
 /* Lists
  ========================================================================== */
 ul,

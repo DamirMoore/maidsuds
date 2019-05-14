@@ -62,6 +62,10 @@ pre {
 a {
   background-color: transparent; }
 
+a:active,
+a:hover {
+  outline: none; }
+
 /**
 * 1. Remove the bottom border in Chrome 57-
 * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -363,22 +367,15 @@ a {
   color: inherit; }
 
 body, html {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
   min-height: 100vh;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  position: relative; }
 
 body {
   color: #3D3D3D; }
@@ -632,8 +629,7 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: 100%; }
+  flex-wrap: wrap; }
   .main-home-section .pulse {
     animation-name: pulse_animation;
     animation-duration: 5000ms;
@@ -664,10 +660,10 @@ h1 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -676,11 +672,13 @@ h1 {
     text-align: center;
     background-color: #FFA8B7;
     color: #fff;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
     width: 100%; }
+    .main-home-section .jumbotron-section img {
+      width: 30rem; }
     .main-home-section .jumbotron-section button {
       color: #fff;
       background-color: #32bdb6;
@@ -851,7 +849,24 @@ h1 {
           margin-bottom: 1rem; }
         .main-home-section .locations-section .locations-item-section .locations-item h2 {
           position: absolute;
-          top: 5rem; }
+          top: 5rem;
+          right: 7rem; }
+        .main-home-section .locations-section .locations-item-section .locations-item h2.location-buckner {
+          position: absolute;
+          top: 6rem;
+          right: 6.5rem; }
+        .main-home-section .locations-section .locations-item-section .locations-item h2.location-lake-lotawana {
+          position: absolute;
+          right: 5.9rem; }
+        .main-home-section .locations-section .locations-item-section .locations-item h2.location-lake-tapawingo {
+          position: absolute;
+          right: 5.4rem; }
+        .main-home-section .locations-section .locations-item-section .locations-item h2.location-grain-valley {
+          position: absolute;
+          right: 7.5rem; }
+        .main-home-section .locations-section .locations-item-section .locations-item h2.location-oak-grove {
+          position: absolute;
+          right: 7.5rem; }
   .main-home-section .home-call-to-action {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -968,43 +983,314 @@ h1 {
         margin-top: 2rem; }
       .main-free-estimate-section .free-estimate-form .free-estimate-form-group h2 {
         margin-bottom: 1rem; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-city-zip {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 30rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-city-zip div {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-city-zip div label {
+            -ms-flex-item-align: start;
+            align-self: flex-start; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-name {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 30rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-name div {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-name div label {
+            -ms-flex-item-align: start;
+            align-self: flex-start; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 30rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div label {
+            -ms-flex-item-align: start;
+            align-self: flex-start; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div input {
+            -ms-flex-item-align: start;
+            align-self: flex-start; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div:nth-child(2) {
+            width: 10rem; }
+            .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div:nth-child(2) input {
+              width: 100%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-type {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 30rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-type input {
+          -ms-flex-item-align: start;
+          align-self: flex-start;
+          width: 100%;
+          margin-top: 0.5rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-type label {
+          -ms-flex-item-align: start;
+          align-self: flex-start;
+          text-align: start; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .questions-or-comments {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 30rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .questions-or-comments label {
+          -ms-flex-item-align: start;
+          align-self: flex-start; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .questions-or-comments textarea {
+          width: 100%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 30rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects div {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 9rem;
+          margin-bottom: 1rem; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects div label {
+            -ms-flex-item-align: start;
+            align-self: flex-start; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects div select {
+            -ms-flex-item-align: start;
+            align-self: flex-start;
+            width: 100%;
+            border: solid 1px rgba(100, 100, 100, 0.2);
+            height: 2rem; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .free-estimate-group-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 30rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .free-estimate-group-item label {
+          -ms-flex-item-align: start;
+          align-self: flex-start;
+          margin-bottom: 0.5rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .free-estimate-group-item input {
+          width: 100%; }
 
-.contact-us-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  .contact-us-form h2 {
-    margin-top: 3rem; }
-  .contact-us-form p {
-    margin-bottom: 2rem; }
-  .contact-us-form input {
-    margin-bottom: 1rem; }
-  .contact-us-form .contact-us-real-button {
-    background-color: #32bdb6;
-    color: #fff;
-    border: none;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    height: 3rem;
-    margin-top: 2rem;
-    cursor: pointer; }
-    .contact-us-form .contact-us-real-button:hover {
-      background-color: #30B5AF; }
+.main-contact-section {
+  text-align: center; }
+  .main-contact-section img {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 4rem; }
+  .main-contact-section .contact-us-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .main-contact-section .contact-us-form .input-title {
+      visibility: hidden;
+      margin-bottom: -1rem; }
+    .main-contact-section .contact-us-form h2 {
+      margin-top: 1rem; }
+    .main-contact-section .contact-us-form p {
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+    .main-contact-section .contact-us-form input {
+      margin-bottom: 1rem;
+      width: 30rem; }
+    .main-contact-section .contact-us-form textarea {
+      width: 30rem; }
+    .main-contact-section .contact-us-form .contact-us-real-button {
+      background-color: #32bdb6;
+      color: #fff;
+      border: none;
+      padding-left: 6rem;
+      padding-right: 6rem;
+      height: 3rem;
+      margin-top: 2rem;
+      cursor: pointer; }
+      .main-contact-section .contact-us-form .contact-us-real-button:hover {
+        background-color: #30B5AF; }
 
 .main-services-section {
   text-align: center; }
+  .main-services-section p:first-of-type {
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .main-services-section .services-page-24-hour-warranty {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .main-services-section .services-page-24-hour-warranty img {
+      width: 12rem; }
+    .main-services-section .services-page-24-hour-warranty h2 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem; }
+    .main-services-section .services-page-24-hour-warranty p {
+      width: 85%; }
   .main-services-section .services-page-item-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1020,7 +1306,9 @@ h1 {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 3rem; }
     .main-services-section .services-page-item-group img {
       width: 12rem; }
     .main-services-section .services-page-item-group .services-page-item {
@@ -1032,15 +1320,140 @@ h1 {
         padding-left: 1rem;
         padding-right: 1rem; }
 
+.free-estimate-sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #FFA8B7;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #fff;
+  margin-top: 4rem;
+  background-image: url("../images/large bubbles3.png"), url("../images/large bubbles3.png");
+  background-repeat: no-repeat;
+  background-position: 10% 75%, right;
+  background-size: 20rem; }
+  .free-estimate-sticky p {
+    font-weight: 600; }
+  .free-estimate-sticky button {
+    background-color: #32bdb6;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-left: 2rem; }
+    .free-estimate-sticky button:hover {
+      background-color: #30B5AF; }
+  .free-estimate-sticky .sticky-free-estimate-close {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem; }
+
+.make-sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0; }
+
+.hide-close-button {
+  display: none; }
+
+.main-about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center; }
+  .main-about-section h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem; }
+  .main-about-section p {
+    width: 80%;
+    text-align: center; }
+
+#call-us-modal {
+  text-align: center; }
+  #call-us-modal img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem; }
+  #call-us-modal p {
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+  #call-us-modal button {
+    background-color: #32bdb6;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem; }
+    #call-us-modal button:hover {
+      background-color: #30B5AF; }
+  #call-us-modal .phone-modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem; }
+
 @media all and (min-width: 800px) {
   .call-now-section-small-screens {
     visibility: hidden; } }
+@media all and (max-width: 1023px) and (min-width: 300px) {
+  .main-home-section .jumbotron-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
+    .main-home-section .jumbotron-section img {
+      display: none; } }
 @media all and (max-width: 800px) and (min-width: 300px) {
   .call-now-section {
     display: none; }
 
   .call-now-section-small-screens {
     visibility: visible; } }
+@media all and (max-width: 650px) and (min-width: 500px) {
+  .free-estimate-sticky {
+    background-image: none;
+    background-image: url("../images/large bubbles3.png");
+    background-repeat: no-repeat;
+    background-position: right; } }
+@media all and (max-width: 500px) and (min-width: 480px) {
+  .free-estimate-sticky {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-image: none;
+    background-image: url("../images/large bubbles3.png");
+    background-repeat: no-repeat;
+    background-position: right; }
+    .free-estimate-sticky button {
+      margin-left: 0;
+      margin-top: 0.5rem; } }
 @media all and (max-width: 480px) and (min-width: 300px) {
   .call-now-section-small-screens {
     visibility: visible;
@@ -1055,6 +1468,271 @@ h1 {
   .main-home-section .jumbotron-section button {
     width: 15rem; }
   .main-home-section .home-call-to-action button {
-    width: 15rem; } }
+    width: 15rem; }
+
+  .free-estimate-sticky {
+    background-image: none;
+    background-image: url("../images/large bubbles3.png");
+    background-repeat: no-repeat;
+    background-position: right; }
+    .free-estimate-sticky button {
+      margin-left: 0;
+      margin-top: 0.5rem; }
+    .free-estimate-sticky .sticky-free-estimate-close {
+      cursor: pointer;
+      position: absolute;
+      right: 2rem;
+      top: 1rem; }
+
+  .main-contact-section .contact-us-form input {
+    width: 90%; }
+  .main-contact-section .contact-us-form textarea {
+    width: 90%; }
+
+  .main-services-section .services-page-24-hour-warranty p {
+    width: 95%; }
+
+  .main-free-estimate-section .free-estimate-form .free-estimate-form-group {
+    width: 100%; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group h2 {
+      margin-top: 2rem; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-city-zip {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-city-zip div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-city-zip div label {
+          -ms-flex-item-align: start;
+          align-self: flex-start; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-city-zip div input {
+          width: 100%; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-name {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-name div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-name div label {
+          -ms-flex-item-align: start;
+          align-self: flex-start; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .your-information-name div input {
+          width: 100%; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group .free-estimate-group-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .free-estimate-group-item label {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        margin-bottom: 0.5rem; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .free-estimate-group-item input {
+        width: 100%; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-type {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-type input {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        width: 100%;
+        margin-top: 0.5rem; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-type label {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        text-align: start; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div label {
+          -ms-flex-item-align: start;
+          align-self: flex-start; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div input {
+          -ms-flex-item-align: start;
+          align-self: flex-start;
+          width: 100%; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div:nth-child(2) {
+          width: 100%; }
+          .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-style-sq div:nth-child(2) input {
+            width: 100%; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 1rem; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects div label {
+          -ms-flex-item-align: start;
+          align-self: flex-start; }
+        .main-free-estimate-section .free-estimate-form .free-estimate-form-group .tell-us-about-home-selects div select {
+          -ms-flex-item-align: start;
+          align-self: flex-start;
+          width: 100%;
+          border: solid 1px rgba(100, 100, 100, 0.2);
+          height: 2rem; }
+    .main-free-estimate-section .free-estimate-form .free-estimate-form-group .questions-or-comments {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .questions-or-comments label {
+        -ms-flex-item-align: start;
+        align-self: flex-start; }
+      .main-free-estimate-section .free-estimate-form .free-estimate-form-group .questions-or-comments textarea {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,7 @@
     <title>Free Estimate - Professional House Cleaning</title>
 
     <!-- css imports -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -21,6 +22,7 @@
     <!-- js imports -->
     <!-- respond.js makes min and max media queries work on old IE browsers -->
     <script src="js/respond.js/respond.js"></script>
+    <script src='js/uikit.min.js'></script>
 </head>
 
 <body>
@@ -29,11 +31,11 @@
             <p>816-548-1105</p>
             <p>Call Now For A FREE Estimate!</p>
         </div>
-        <div class="call-now-section-small-screens pulse-phone">
+        <div class="call-now-section-small-screens pulse-phone" uk-toggle="target: #call-us-modal">
             <i class="fas fa-phone-volume"></i>
         </div>
         <!-- <h1><a href="index.html">MaidSuds</a></h1> -->
-        <img src="images/logo2.png" alt="MaidSuds">
+        <a href="index.html"><img src="images/logo2.png" alt="MaidSuds"></a>
         <nav class="navbar">
             <a class="home-nav-link" href="index.html">Home</a>
             <a class="services-nav-link" href="services.html">Services</a>
@@ -47,23 +49,109 @@
             <h1>Request A Cleaning Estimate</h1>
             <div class="free-estimate-form-group">
                 <h2>Your Information</h2>
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Street Address">
-                <input type="text" placeholder="City">
-                <input type="text" placeholder="Zip">
-                <input type="text" placeholder="Email Address">
-                <input type="text" placeholder="Phone">
+                <div class="your-information-name">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="First Name" type="text">
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" name="Last Name" type="text">
+                    </div>
+                </div>
+                <div class="free-estimate-group-item">
+                    <label for="street-address">Street Address</label>
+                    <input id="street-address" name="Street Address" type="text">
+                </div>
+                <div class="your-information-city-zip">
+                    <div>
+                        <label for="city">City</label>
+                        <input id="city" name="City" type="text">
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input id="zip" name="Zip" type="text">
+                    </div>
+                </div>
+                <div class="free-estimate-group-item">
+                    <label for="email">Email</label>
+                    <input id="email" name="Email" type="text">
+                </div>
+                <div class="free-estimate-group-item">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="Phone" type="text">
+                </div>
             </div>
             <div class="free-estimate-form-group">
                 <h2>Tell Us About Your Home</h2>
-                <input type="text" placeholder="House Style (one-story, two-story, etc.)">
-                <input type="text" placeholder="Square Feet">
+                <div class="tell-us-about-home-type">
+                    <label for="type-of-service">What Type of Cleaning Are You Looking For? (Recurring or One-Time
+                        Cleaning)</label>
+                    <input id="type-of-service" name="Type of Service" type="text">
+                </div>
+                <div class="tell-us-about-style-sq">
+                    <div>
+                        <label for="house-style">House Style (one-story, two-story, etc.)</label>
+                        <input id="house-style" name="House Style" type="text">
+                    </div>
+                    <div>
+                        <label for="square-feet">Square Feet</label>
+                        <input id="square-feet" name="Square Feet" type="text">
+                    </div>
+                </div>
+                <div class="tell-us-about-home-selects">
+                    <div>
+                        <label for="bedrooms">Bedrooms</label>
+                        <select name="Bedrooms" id="bedrooms">
+                            <option value="" selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="bathrooms">Bathrooms</label>
+                        <select name="Bathrooms" id="bathrooms">
+                            <option value="" selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pets">Pets</label>
+                        <select name="Pets" id="pets">
+                            <option value="" selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="questions-or-comments">
+                    <label for="questions-or-comments2">Questions or Comments</label>
+                    <textarea name="Questions or Comments" id="questions-or-comments2" cols="30" rows="10"></textarea>
+                </div>
             </div>
 
             <input class="free-estimate-real-button pulse" type="submit" value="Get Free Estimate">
         </form>
     </main>
+
+    <div id="call-us-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <img src="images/phone icon.png" alt="MaidSuds Cleaning Services">
+            <h2>816-548-1105</h2>
+            <p>MaidSuds is always ready to help. Give us a call and get a free estimate.</p>
+            <p>or</p>
+            <a href="free-estimate.html"><button class="pulse">Fill Out Form For Free Estimate</button></a>
+            <span class="uk-modal-close phone-modal-close fas fa-times"></span>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="social-media-icon-section">

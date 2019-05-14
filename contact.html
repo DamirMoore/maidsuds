@@ -8,9 +8,10 @@
     <meta name="description"
         content="Professional house cleaning service. We offer housekeeping, move out/move in cleaning, recurring cleaning, apartment cleaning, event cleaning, and occasional cleaning. Here at MaidSuds we tailor our services to fit your needs.">
 
-    <title>Free Estimate - Professional House Cleaning</title>
+    <title>Contact Us - Professional House Cleaning</title>
 
     <!-- css imports -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -21,6 +22,7 @@
     <!-- js imports -->
     <!-- respond.js makes min and max media queries work on old IE browsers -->
     <script src="js/respond.js/respond.js"></script>
+    <script src='js/uikit.min.js'></script>
 </head>
 
 <body>
@@ -29,11 +31,11 @@
             <p>816-548-1105</p>
             <p>Call Now For A FREE Estimate!</p>
         </div>
-        <div class="call-now-section-small-screens pulse-phone">
+        <div class="call-now-section-small-screens pulse-phone" uk-toggle="target: #call-us-modal">
             <i class="fas fa-phone-volume"></i>
         </div>
         <!-- <h1><a href="index.html">MaidSuds</a></h1> -->
-        <img src="images/logo2.png" alt="MaidSuds">
+        <a href="index.html"><img src="images/logo2.png" alt="MaidSuds"></a>
         <nav class="navbar">
             <a class="home-nav-link" href="index.html">Home</a>
             <a class="services-nav-link" href="services.html">Services</a>
@@ -43,13 +45,16 @@
     </header>
 
     <main class="main-contact-section">
-
+        <img src="images/contact us icon.png" alt="MaidSuds Professional Cleaning Services. Contact us.">
         <form method="POST" action="https://formspree.io/maidsuds@gmail.com" class="contact-us-form">
             <h2>Contact Us</h2>
             <p>MaidSuds is always ready to help. Send us a message and we'll respond as soon as we can.</p>
-            <input type="text" class="contact-name" name="name" placeholder="Name" />
-            <input class="contact-email" type="email" name="email" placeholder="Email" />
-            <textarea name="message" placeholder="Your Message..." rows="10" class="contact-message"></textarea>
+            <label for="contact-name" class="input-title">Name</label>
+            <input type="text" id="contact-name" name="Name" placeholder="Name" />
+            <label for="contact-email" class="input-title">Email</label>
+            <input id="contact-email" type="email" name="Email" placeholder="Email" />
+            <label for="contact-message" class="input-title">Message</label>
+            <textarea id="contact-message" name="Message" placeholder="Your Message..." rows="10"></textarea>
             <!-- <p class="contact-form-error contact-hide-error">
                 Error! All fields must be completed.
             </p> -->
@@ -58,6 +63,17 @@
             <input class="contact-us-real-button" type="submit" value="Send Message">
         </form>
     </main>
+
+    <div id="call-us-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <img src="images/phone icon.png" alt="MaidSuds Cleaning Services">
+            <h2>816-548-1105</h2>
+            <p>MaidSuds is always ready to help. Give us a call and get a free estimate.</p>
+            <p>or</p>
+            <a href="free-estimate.html"><button class="pulse">Fill Out Form For Free Estimate</button></a>
+            <span class="uk-modal-close phone-modal-close fas fa-times"></span>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="social-media-icon-section">
