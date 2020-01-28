@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="Professional house cleaning service. We offer housekeeping, move out/move in cleaning, recurring cleaning, apartment cleaning, event cleaning, and occasional cleaning. Here at MaidSuds we tailor our services to fit your needs.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Professional house cleaning service. We offer housekeeping, move out/move in cleaning, recurring cleaning, apartment cleaning, event cleaning, and occasional cleaning. Here at MaidSuds we tailor our services to fit your needs."
+    />
 
     <title>About Us - Professional House Cleaning</title>
 
     <!-- css imports -->
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/uikit.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
 
     <!-- import favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
@@ -22,65 +37,81 @@
     <!-- js imports -->
     <!-- respond.js makes min and max media queries work on old IE browsers -->
     <script src="js/respond.js/respond.js"></script>
-    <script src='js/uikit.min.js'></script>
-</head>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
 
-<body>
+  <body>
     <header class="header-section">
-        <div class="call-now-section pulse-phone">
-            <p>816-601-7006</p>
-            <p>Call Now For A FREE Estimate!</p>
-        </div>
-        <div class="call-now-section-small-screens pulse-phone" uk-toggle="target: #call-us-modal">
-            <i class="fas fa-phone-volume"></i>
-        </div>
-        <!-- <h1><a href="index.html">MaidSuds</a></h1> -->
-        <a href="index.html"><img src="images/logo2.png" alt="MaidSuds"></a>
-        <nav class="navbar">
-            <a class="home-nav-link" href="index.html">Home</a>
-            <a class="services-nav-link" href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <div class="call-now-section pulse-phone">
+        <p>816-601-7006</p>
+        <p>Call Now For A FREE Estimate!</p>
+      </div>
+      <div
+        class="call-now-section-small-screens pulse-phone"
+        uk-toggle="target: #call-us-modal"
+      >
+        <i class="fas fa-phone-volume"></i>
+      </div>
+      <!-- <h1><a href="index.html">MaidSuds</a></h1> -->
+      <a href="index.html"><img src="images/logo2.png" alt="MaidSuds"/></a>
+      <nav class="navbar">
+        <a class="home-nav-link" href="index.html">Home</a>
+        <a class="services-nav-link" href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
     <main class="main-about-section">
-        <h1>The MaidSuds Way</h1>
-        <p>
-            MaidSuds home cleaning services are customized to meet your needs. From kitchen appliances to bathroom
-            vanities, our professionals are happy to tackle those hard-to-clean areas of the home. In addition to
-            regularly scheduled services, we also provide move-in/move-out cleans. Whether you are moving into your new
-            home or are a landlord and in between tenants, we can provide you with exceptional service.
-        </p>
+      <h1>The MaidSuds Way</h1>
+      <p>
+        MaidSuds home cleaning services are customized to meet your needs. From
+        kitchen appliances to bathroom vanities, our professionals are happy to
+        tackle those hard-to-clean areas of the home. In addition to regularly
+        scheduled services, we also provide move-in/move-out cleans. Whether you
+        are moving into your new home or are a landlord and in between tenants,
+        we can provide you with exceptional service.
+      </p>
     </main>
 
     <!-- free estimate sticky message -->
-    <div class="free-estimate-sticky make-sticky">
-        <p>Get A Free Estimate</p>
-        <a href="free-estimate.html"><button class="free-estimate-sticky-button pulse">Receive
-                Estimate</button></a>
-        <span class="sticky-free-estimate-close fas fa-times" onclick="closeStickyEstimate()"></span>
+    <div class="free-estimate-sticky">
+      <p>Get A Free Estimate</p>
+      <a href="free-estimate.html"
+        ><button class="free-estimate-sticky-button pulse">
+          Receive Estimate
+        </button></a
+      >
     </div>
 
     <div id="call-us-modal" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
-            <img src="images/phone icon.png" alt="MaidSuds Cleaning Services">
-            <h2>816-601-7006</h2>
-            <p>MaidSuds is always ready to help. Give us a call and get a free estimate.</p>
-            <p>or</p>
-            <a href="free-estimate.html"><button class="pulse">Fill Out Form For Free Estimate</button></a>
-            <span class="uk-modal-close phone-modal-close fas fa-times"></span>
-        </div>
+      <div class="uk-modal-dialog uk-modal-body">
+        <img src="images/phone icon.png" alt="MaidSuds Cleaning Services" />
+        <h2>816-601-7006</h2>
+        <p>
+          MaidSuds is always ready to help. Give us a call and get a free
+          estimate.
+        </p>
+        <p>or</p>
+        <a href="free-estimate.html"
+          ><button class="pulse">Fill Out Form For Free Estimate</button></a
+        >
+        <span class="uk-modal-close phone-modal-close fas fa-times"></span>
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="social-media-icon-section">
-            <i class="social-media-icon fab fa-facebook-f"></i>
-            <i class="social-media-icon fab fa-twitter"></i>
-            <i class="social-media-icon fab fa-google-plus-g"></i>
-        </div>
-        <p>&#169; MaidSuds, 2019</p>
+      <p>&#169; MaidSuds, <span id="copyrite-year"></span></p>
     </footer>
-</body>
 
+    <!-- Javascript -->
+    <script>
+      // executes when DOM is ready
+      (function() {
+        // changes the copyrite year automatically
+        dynamicCopyrite("copyrite-year"); // takes html id of year <span>
+      })();
+    </script>
+  </body>
 </html>
